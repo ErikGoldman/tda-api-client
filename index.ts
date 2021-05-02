@@ -14,7 +14,7 @@ const transactions = require('./src/transactions');
 const userinfo = require('./src/userinfo');
 const watchlists = require('./src/watchlists');
 
-module.exports = {
+const TDClient = {
     accounts: accounts.api,
     authentication: authentication.api,
     instruments: instruments.api,
@@ -29,3 +29,5 @@ module.exports = {
     userinfo: userinfo.api,
     watchlists: watchlists.api
 };
+
+export default TDClient; 
